@@ -3,6 +3,8 @@ require 'data_mapper'
 env = ENV["RACK_ENV"] || "development" # defaulting to devopment
 DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{env}") # select database for enviro
 require './lib/link'
+require './lib/tag'
+
 DataMapper.finalize
 DataMapper.auto_upgrade!
 
@@ -11,9 +13,10 @@ get '/' do
   erb :index
 end
 
-post  '/links' do
+post '/links' do
   url = params["url"]
   title = params["title"]
-  Link.create(:url => url, :title => title)
+  tags = params["tags"].split(" ").map { |tag| Tag.first_or_create(:text => tag) }
+  Link.create(:url => url, :title => title, :tags => tags)
   redirect to ('/')
 end
