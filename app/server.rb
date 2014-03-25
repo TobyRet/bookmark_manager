@@ -28,12 +28,28 @@ get '/users/new' do
   erb :"users/new"
 end
 
+get '/sessions/new' do
+  erb :"sessions/new"
+end
+
 post '/links' do
   url = params["url"]
   title = params["title"]
   tags = params["tags"].split(" ").map { |tag| Tag.first_or_create(:text => tag) }
   Link.create(:url => url, :title => title, :tags => tags)
   redirect to ('/')
+end
+
+post '/sessions' do
+  email, password = params[:email], params[:password]
+  user = User.authenticate(email, password)
+  if user
+    session[:user_id] = user.id
+    redirect to('/')
+  else
+    flash[:errors] = ["The email or password are incorrect"]
+    erb :"sessions/new"
+  end
 end
 
 post '/users' do 
