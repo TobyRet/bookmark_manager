@@ -1,7 +1,36 @@
-<% if current_user %>
-	Welcome, <%= current_user.email %>
-	<form method="post" action="/sessions">
-		<input type="hidden" name="_method" value="delete">
-		<input type="submit" value="Sign out">
-	</form>
-<% end %>
+<header>
+	<nav class="navbar">
+		<div class="container">
+			<div id="logo">BOOKMARK MANAGER</div>
+
+			<div id="user-links">
+				<% if current_user %>
+					<span id="welcome-message">
+						Welcome, <%= current_user.email %>
+					</span>
+					<form class= "nav_buttons" method="post" action="/sessions">
+						<input type="hidden" name="_method" value="delete">
+						<input type="submit" value="Sign out">
+					</form>
+				<% end %>
+				<% if !current_user %>
+					<ul>
+						<li>
+							<a class="nav_buttons" href="/users/new">Sign up</a>
+							<!--<form method="post" action="/sessions">
+								<input class= "nav_buttons" type="submit" value="Sign up">
+							</form>-->
+						</li>
+						<li>
+							<a class="nav_buttons" href="/sessions/new">Sign in</a>
+							<!--<form method="post" action="/sessions">
+								<input class="nav_buttons" type="submit" value="Sign in">
+							</form>-->
+						</li>
+					</ul>
+				<% end %>
+			</div>
+		</div>
+	</nav>
+</header>
+			

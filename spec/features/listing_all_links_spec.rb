@@ -17,8 +17,8 @@ feature "User browses the list of links" do
       :tags => [Tag.first_or_create(:text => 'education')])
   }
 
-  scenario "when opening the home page" do
-    visit '/'
+  scenario "when opening the links page" do
+    visit '/links'
     expect(page).to have_content("Makers Academy")
   end
 
