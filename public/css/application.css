@@ -1,8 +1,18 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
 	background-image: url(../../app/assets/images/crossword.png)
+	margin: 0 0 100px; 
 }
 
 .navbar {
@@ -42,7 +52,7 @@ body {
 }
 
 #logo a:hover {
-	color: #f1c40f;
+	color: #c0392b;
 }
 
 a:link, a:visited {
@@ -62,7 +72,7 @@ a:link, a:visited {
 
 #add_link {
 	font-size: 20px;
-	background: #e74c3c;
+	background: #c0392b;
 	border-radius: 10px;
 	color: white;
 	border: none;
@@ -73,12 +83,21 @@ a:link, a:visited {
 }
 
 .nav_buttons:hover {
-	background-color: #f1c40f;
+	background-color: #c0392b;
+	color: white;
 }
 
 #add_link:hover {
 	background-color: white;
-	color: #e74c3c;
+	color: #c0392b;
+}
+
+#links-container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 100px;
 }
 
 .link {
@@ -86,7 +105,9 @@ a:link, a:visited {
 	padding: 20px;
 	background-color: #ecf0f1;
 	border-radius: 5px;
-	margin: 10px inherit;
+	margin: 15px inherit;
+	box-shadow: 0 0 2px rgba(0,0,0,0.4);
+	display: inline-block;
 }
 
 .link a.title {
@@ -105,6 +126,40 @@ a:link, a:visited {
 	float: right;
 	font-size: 14px;
 	font-family: 'News Cycle', sans-serif;
+}
+
+footer {
+  	display: flex;
+  	background-color: black;
+  	position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    font-family: 'News Cycle', sans-serif;
+    color: white;
+    font-size: 12px
+}
+
+footer a:link {
+	color: white;
+}
+
+footer > * {
+    margin: auto inherit;
+  }
+
+footer img {
+	vertical-align: top;
+}
+
+footer #technologies {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+footer p {
+	padding: 5px 25px;
 }
 
 

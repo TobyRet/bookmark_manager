@@ -5,14 +5,19 @@
 
 			<div id="user-links">
 				<% if current_user %>
-					<span id="welcome-message">
-						Welcome, <%= current_user.email %>
-					</span>
 					<ul>
-						<form class="nav_buttons" method="post" action="/sessions">
-							<input type="hidden" name="_method" value="delete">
-							<input type="submit" value="Sign out">
-						</form>
+						<li>
+							<form class="nav_buttons" method="post" action="/sessions">
+								<input type="hidden" name="_method" value="delete">
+								<input class="nav_buttons" type="submit" value="Sign out">
+							</form>
+						</li>
+						<li>
+							<span id="welcome-message">
+								Welcome, <%= current_user.email %>
+							</span>
+						</li>
+						<li><a id="add_link" href="/users/new">Add link</a></li>
 					</ul>
 				<% end %>
 				<% if !current_user %>
