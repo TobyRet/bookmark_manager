@@ -1,8 +1,9 @@
-<div id="new-link">
-	<form action="/links" method="post">
-		Url: <input type="text" name="url">
-		Title: <input type="text" name="title">
-		Tags: <input type="text" name="tags">
-		<input type="submit" value="Add link">
+<div id="new-link" class="form-container">
+	<h2>Submit a new link!</h2>
+	<form class="forms" action="/links" method="post">
+		<p><input type="text" name="url" placeholder="URL"></p>
+		<p><input type="text" name="title" placeholder="Title"></p>
+		<p><input type="text" name="tags" placeholder="Tags"></p>
+		<p><input class="nav_buttons" type="submit" value="Add link"></p>
 	</form>
 </div>

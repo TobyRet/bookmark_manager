@@ -15,6 +15,12 @@ body {
 	margin: 0 0 100px; 
 }
 
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
 .navbar {
 	background-color: black;
 	min-height: 70px;
@@ -32,7 +38,7 @@ body {
 
 #logo {
 	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
+	font-size: 30px;
 	color: white;
 	float: left;
 	vertical-align: top;
@@ -66,8 +72,9 @@ a:link, a:visited {
 	border-radius: 10px;
 	border: none;
 	margin: 0px 5px 0px 5px;
-	font-family: 'Oswald', sans-serif;
 	padding: 2px 5px;
+	font-family: 'Oswald', sans-serif;
+	cursor: pointer;
 }
 
 #add_link {
@@ -92,7 +99,23 @@ a:link, a:visited {
 	color: #c0392b;
 }
 
-#links-container {
+#welcome-message {
+	color: white;
+	margin-right: 20px;
+}
+
+#notice {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: #2ecc71;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  font-family: 'News Cycle', sans-serif;
+}
+
+.content-container {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 100px;
@@ -162,4 +185,33 @@ footer p {
 	padding: 5px 25px;
 }
 
+#makersacademy-logo {
+	margin-left: 30px;
+}
+
+form input[type="text"], form input[type="password"] {
+    border: 1px solid #95a5a6;
+    font-size: 16px;
+    width: 400px;
+ }
+
+form input[type="submit"] {
+	font-size: 20px;
+	background: #c0392b;
+	border-radius: 10px;
+	color: white;
+	border: none;
+	font-family: 'Oswald', sans-serif;
+	padding: 2px 5px;
+	margin-right: 70px;
+}
+
+.form-container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 35%;
+	padding-right: 35%;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
 
