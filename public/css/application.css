@@ -151,6 +151,10 @@ a:link, a:visited {
 	font-family: 'News Cycle', sans-serif;
 }
 
+.source {
+	margin-top: 30px;
+}
+
 footer {
   	display: flex;
   	background-color: black;
@@ -160,7 +164,8 @@ footer {
     width: 100%;
     font-family: 'News Cycle', sans-serif;
     color: white;
-    font-size: 12px
+    font-size: 12px;
+    position: absolute;
 }
 
 footer a:link {
@@ -233,9 +238,23 @@ input {
 	color: white;
 	font-family: 'News Cycle', sans-serif;
 	float: left;
-	display:inline-block;
-	padding: 4px 4px 8px 4px;
+	display: inline-block;
+	padding: 5px 10px 10px;
 	margin-right: 4px;
-	margin-top: 4px;
+	margin-top: 15px;
 }
+
+.favourite {
+	float: right;
+	margin: 0px 4px;
+}
+
+.favourite a:link, .favourite a:visited {
+	color: black;
+}
+
+.favourite a:hover {
+	color: #c0392b;
+}
+
 

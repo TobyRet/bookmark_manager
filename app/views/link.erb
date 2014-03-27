@@ -1,17 +1,17 @@
 <li class='link'>
 	<a class='title' href='<%= link.url %>'><%= link.title %></a>
+	<span class="favourite">
+		<a href="#" target="_blank"><i class="fa fa-heart"></i></a>
+	</span>
 	<div class='description'>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 	</div>
-	<span>
 		<% link.tags.map do |tag|  %>
 			<div class='tags'>
 				<%= tag.text %>
 			</div>
 		<% end %>
-	
-	<span class = 'source'>
-		Added yesterday by
-		<a href="#">toby@gmail.com</a>
-	</span>
+	<div class = 'source'>
+		Added yesterday by <a href="#">Captain Carrot</a>
+	</div>
 </li>
