@@ -1,7 +1,9 @@
-<h3>Please sign in</h3>
-
-<form method="post" action="/sessions">
-	Email: <input type="text" name='email'>
-	Password: <input type="password" name='password'>
-	<input type="submit" value= "Sign in">
-</form>
+<div id="new-link" class="form-container">
+	<form method="post" action="/sessions">
+		<h2>Please sign in</h2>
+		<p><input type="text" name='email' placeholder="Email"></p>
+		<p><input type="password" name='password' placeholder="Password"></p>
+		<fieldset>
+			<input id="form_submit" type="submit" value= "Sign in">
+		</fieldset>
+	</form>
