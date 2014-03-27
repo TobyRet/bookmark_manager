@@ -1,8 +1,15 @@
 <li class='link'>
-	<a class='title' href="<%= link.url %>"><%= link.title %></a>
+	<a class='title' href='<%= link.url %>'><%= link.title %></a>
 	<div class='description'>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 	</div>
+	<span>
+		<% link.tags.map do |tag|  %>
+			<div class='tags'>
+				<%= tag.text %>
+			</div>
+		<% end %>
+	
 	<span class = 'source'>
 		Added yesterday by
 		<a href="#">toby@gmail.com</a>

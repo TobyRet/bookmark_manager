@@ -154,7 +154,6 @@ a:link, a:visited {
 footer {
   	display: flex;
   	background-color: black;
-  	position: fixed;
     left: 0;
     bottom: 0;
     height: 100px;
@@ -188,23 +187,6 @@ footer p {
 #makersacademy-logo {
 	margin-left: 30px;
 }
-
-/*form input[type="text"], form input[type="password"] {
-    border: 1px solid #95a5a6;
-    font-size: 16px;
-    width: 400px;
- }
-
-form input[type="submit"] {
-	font-size: 20px;
-	background: #c0392b;
-	border-radius: 10px;
-	color: white;
-	border: none;
-	font-family: 'Oswald', sans-serif;
-	padding: 2px 5px;
-	margin-right: 70px;
-}*/
 
 .form-container {
 	margin-right: auto;
@@ -243,5 +225,17 @@ input {
 #form_submit:hover {
 	background-color: white;
 	color: #c0392b;
+}
+
+.tags {
+	background-color: #95a5a6;
+	border-radius: 4px;
+	color: white;
+	font-family: 'News Cycle', sans-serif;
+	float: left;
+	display:inline-block;
+	padding: 4px 4px 8px 4px;
+	margin-right: 4px;
+	margin-top: 4px;
 }
 

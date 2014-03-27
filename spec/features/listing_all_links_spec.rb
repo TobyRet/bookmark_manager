@@ -29,5 +29,10 @@ feature "User browses the list of links" do
     expect(page).to have_content("Google")
     expect(page).to have_content("Bing")
   end
-      
+
+  scenario "display tags for links" do
+    visit '/'
+    expect(page).to have_content("search")
+    expect(page).to have_content("education")
+  end  
 end
