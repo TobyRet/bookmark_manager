@@ -12,7 +12,7 @@ class User
 
 
   attr_reader :password
-  attr_accessor :password_confirmation
+  attr_accessor :password_confirmation, :link
 
   validates_confirmation_of :password, :message => "Sorry, your passwords don't match"
 
