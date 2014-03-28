@@ -154,6 +154,7 @@ a:link, a:visited {
 .source {
 	margin-top: 30px;
 	font-size: 12px;
+	margin-right: 10px;
 }
 
 footer {
@@ -248,7 +249,7 @@ input {
 .favourite {
 	float: right;
 	margin-top: 4px;
-	margin-right: 20px;
+	margin-right: 10px;
 	border: none;
 	background-color: #ecf0f1;
 	cursor: pointer;

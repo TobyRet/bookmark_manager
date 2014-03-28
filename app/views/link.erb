@@ -11,7 +11,12 @@
 	<div class = 'source'>
 		Added yesterday by <a href="#">Captain Carrot</a>
 	</div>
+
+	<div class = 'source'>
+		<i class="fa fa-heart"> <%= link.users.count %></i>
+	</div>
+	
 	<form id="favourite-form" method="post" action="/favourites">
-		<button class="favourite" name="link_id" value="<%= link.id %>"><i class="fa fa-heart"></i> Favourite</button>
+		<button class="favourite" name="link_id" value="<%= link.id %>">Favourite</button>
 	</form>
 </li>
