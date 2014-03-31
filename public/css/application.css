@@ -36,12 +36,22 @@ h2 {
 	padding-right: 30px;
 }
 
+/* ------------ NAV BAR ---------------- */
+
 #logo {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	color: white;
 	float: left;
 	vertical-align: top;
+}
+
+#logo a {
+	color: white;
+}
+
+#logo a:hover {
+	color: #c0392b;
 }
 
 #user-links li {
@@ -53,28 +63,25 @@ h2 {
 	text-decoration: none;
 }
 
-#logo a {
-	color: white;
-}
-
-#logo a:hover {
-	color: #c0392b;
-}
-
 a:link, a:visited {
 	text-decoration: none;
 }
 
-.nav_buttons {
+.sign_up, .sign_in, .sign_out {
 	font-size: 20px;
-	background: white;
-	color: black;
+	background: #c0392b;
+	color: white;
 	border-radius: 4px;
 	border: none;
-	margin: 0px 5px 0px 5px;
+	margin-right: 10px; 
 	padding: 2px 5px;
 	font-family: 'Oswald', sans-serif;
 	cursor: pointer;
+}
+
+.sign_up:hover, .sign_in:hover {
+	background-color: white;
+	color: black;
 }
 
 #add_link {
@@ -84,14 +91,13 @@ a:link, a:visited {
 	color: white;
 	border: none;
 	font-family: 'Oswald', sans-serif;
-	padding: 2px 5px;
-	margin-right: 70px;
+	padding: 2px 10px;
+	margin-right: 140px;
 
 }
 
-.nav_buttons:hover {
-	background-color: #c0392b;
-	color: white;
+.bookmark {
+	margin-right: 5px;
 }
 
 #add_link:hover {
@@ -102,7 +108,10 @@ a:link, a:visited {
 #welcome-message {
 	color: white;
 	margin-right: 20px;
+	font-family: 'News Cycle', sans-serif;
 }
+
+/* ----------- END OF NAV BAR ---------------- */
 
 #notice {
   text-align: center;
@@ -207,7 +216,7 @@ footer p {
 form {
 	/*border: 1px solid #bdc3c7;
 	border-radius: 4px;*/
-	padding: 20px;
+	/* padding: 20px; */
 	width: 100%;
 }
 
