@@ -1,6 +1,7 @@
 <div id="new-link" class="form-container">
 	<form action="/users" method="post">
 		<h2>Please sign up</h2>
+		<p><input name="username" type="text" placeholder="Username"></p>
 		<p><input name="email" type="text" value="<%= @user.email %>" placeholder="Email"></p>
 		<p><input name="password" type="password" placeholder="Enter a password"></p>
 		<p><input name="password_confirmation" type="password" placeholder="Confirm password"></p>

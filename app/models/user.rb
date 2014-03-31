@@ -5,13 +5,14 @@ class User
   include DataMapper::Resource
 
   property :id, Serial
+  property :username, String, :unique => true, :message => "This user is already taken"
   property :email, String, :unique => true, :message => "This email is already taken"
   property :password_digest, Text
 
   has n, :links, :through => Resource
 
   attr_reader :password
-  attr_accessor :password_confirmation #, :link # this causing a prob?
+  attr_accessor :password_confirmation 
 
   validates_confirmation_of :password, :message => "Sorry, your passwords don't match"
 
