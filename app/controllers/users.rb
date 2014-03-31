@@ -3,6 +3,13 @@ get '/users/new' do
   erb :"users/new"
 end
 
+#not sure why this is not working. Lists same link for all users. Gets does not work?
+get '/users/:id' do
+  user = User.first(:id => params[:id]) 
+  @links = user ? user.links : []
+  erb :index
+end
+
 post '/users' do 
   @user = User.create(:email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])
   if @user.save

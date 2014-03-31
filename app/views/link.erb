@@ -8,14 +8,15 @@
 				<%= tag.text %>
 			</div>
 		<% end %>
-	<div class = 'source'>
-		Added yesterday by <a href="#">Captain Carrot</a>
-	</div>
 
+	<span class = 'source'>
+		Added by <a href="#"><% link.user != nil ? link.user.email : 'Anonymous' %></a>
+	</span>
+	
 	<div class = 'source'>
 		<i class="fa fa-heart"> <%= link.users.count %></i>
 	</div>
-	
+
 	<form id="favourite-form" method="post" action="/favourites">
 		<button class="favourite" name="link_id" value="<%= link.id %>">Favourite</button>
 	</form>

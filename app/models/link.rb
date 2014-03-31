@@ -8,7 +8,6 @@ class Link
   property :id, Serial
   property :title, String
   property :url, String
-  has n, :users, :through => Resource
 
   attr_accessor :user
 

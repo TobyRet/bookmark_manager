@@ -10,9 +10,8 @@ class User
 
   has n, :links, :through => Resource
 
-
   attr_reader :password
-  attr_accessor :password_confirmation, :link
+  attr_accessor :password_confirmation #, :link # this causing a prob?
 
   validates_confirmation_of :password, :message => "Sorry, your passwords don't match"
 
