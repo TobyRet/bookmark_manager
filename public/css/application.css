@@ -270,23 +270,21 @@ input {
 	color: #c0392b;
 }
 
-/*.favourite {
-	float: right;
-	margin: 0px 4px;
+#links {
+	position: relative;
 }
 
-.favourite a:link, .favourite a:visited {
-	color: black;
-}
-
-.favourite a:hover {
+#links .heart {
+	position: absolute;
+	font-size: 24px;
+	right: 5px;
+	top: 5px;
 	color: #c0392b;
+	cursor: pointer;
 }
 
-.favourite_button {
-	background: ;
-	font-size: 12px
-}*/
-
+#links .heart.solid {
+	opacity: 0;
+}
 
 
