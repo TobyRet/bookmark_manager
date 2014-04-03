@@ -1,6 +1,6 @@
 get '/users/new' do
   @user = User.new
-  erb :"users/new"
+  erb :"users/new", :layout => !request.xhr?
 end
 
 #not sure why this is not working. Lists same link for all users. Gets does not work?

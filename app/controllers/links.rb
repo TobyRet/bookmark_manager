@@ -6,6 +6,6 @@ post '/links' do
   redirect to ('/')
 end
 
-get '/links' do
-  erb :"links/new"
+get '/links/new' do
+  erb :"links/new", :layout => !request.xhr?
 end

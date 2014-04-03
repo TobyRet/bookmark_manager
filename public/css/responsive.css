@@ -1,0 +1,15 @@
+@media(max-width: 320px) {
+	#container {
+		margin: 10px;
+	}
+
+	#logo {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	#add_link, #sign_up, #sign_out, #sign_in  {
+		text-align: center;
+	}
+
+}
