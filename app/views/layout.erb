@@ -10,8 +10,10 @@
 	</head>
 	<body>
 		<%= partial :welcome_message %>
-		<%= partial :flash %>
-		<%= yield %>
+		<div class="content-container">
+			<%= partial :flash %>
+			<%= yield %>
+		</div>
 		<%= partial :footer %>
 		<script src = "http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src = "/javascript/application.js"></script>

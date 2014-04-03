@@ -6,12 +6,12 @@
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 	</div>
 	<% link.tags.map do |tag|  %>
-		<div class='tags'>
-			<%= tag.text %>
-		</div>
+		<a class='tags' href='/tags/<%= tag.text %>'><%= tag.text %></a>
 	<% end %>
 	<span class = 'source'>Added by <a href="#">Captain Carrot</a></span>
-	<form id="favourite-form" method="post" action="/favourites">
-		<button class="favourite" name="link_id" value="<%= link.id %>">Favourite</button>
-	</form>
+	<span class = 'source'>
+		<form id="favourite-form" method="post" action="/favourites">
+			<button class="favourite" name="link_id" value="<%= link.id %>">Favourite</button>
+		</form>
+	</span>
 </li>
