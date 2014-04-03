@@ -262,8 +262,8 @@ input {
 #links .heart {
 	position: absolute;
 	font-size: 24px;
-	right: 5px;
-	top: 5px;
+	right: 20px;
+	top: 30px;
 	color: #c0392b;
 	cursor: pointer;
 }
