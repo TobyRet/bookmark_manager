@@ -99,9 +99,8 @@ a:link, a:visited {
 
 /* ----------- END OF NAV BAR ---------------- */
 
-#notice {
+.notice {
   text-align: center;
-  margin: 5px;
   padding: 5px;
   background-color: #2ecc71;
   border-radius: 4px;
@@ -255,20 +254,20 @@ input {
 	color: #c0392b;
 }
 
-#links {
+.link {
 	position: relative;
 }
 
-#links .heart {
+.link .heart {
 	position: absolute;
 	font-size: 24px;
-	right: 20px;
-	top: 30px;
+	right: 10px;
+	top: 10px;
 	color: #c0392b;
 	cursor: pointer;
 }
 
-#links .heart.solid {
+.link .heart.solid {
 	opacity: 0;
 }
 
