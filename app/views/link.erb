@@ -8,10 +8,11 @@
 	<% link.tags.map do |tag|  %>
 		<a class='tags' href='/tags/<%= tag.text %>'><%= tag.text %></a>
 	<% end %>
-	<span class = 'source'>Added by <a href="#">Captain Carrot</a></span>
-	<span class = 'source'>
+	<%= 'This link has a user' if link.user %>
+	<span class = 'source'>Added by <a href="#"><%= link.user.email  if link.user %></a></span>
+	<!--<span class = 'source'>
 		<form id="favourite-form" method="post" action="/favourites">
-			<button class="favourite" name="link_id" value="<%= link.id %>">Favourite</button>
+			<button class="favourite" name="link_id" value="">Favourite</button>
 		</form>
-	</span>
+	</span>-->
 </li>
